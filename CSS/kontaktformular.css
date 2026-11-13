@@ -13,7 +13,15 @@
     background-color: #ffd6ad;
 }
 
+/*Info om online hjælp*/
 
+.info_online_hjælp {
+background-color: #89B0Ae;
+}
+
+.online_img {
+    width: 100%;
+}
 
 /*Kontaktformular*/
 input[type=text], input[type=email],input[type=tel], select, textarea { 
@@ -136,4 +144,8 @@ fieldset{
 	header{
 		margin-bottom: 0;
 	}
+}
+
+.levelænge_img {
+    width: 100%;
 }
