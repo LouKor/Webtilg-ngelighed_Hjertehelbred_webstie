@@ -2,3 +2,36 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+
+
+
+
+
+
+/*Footer*/
+footer {
+    background-color: #124d56;
+}
+
+.left-footer{
+    float: left;
+    width: 50%;
+}
+
+footer p, h4{
+    color: #ffd6ad;
+}
+
+footer a{
+    color: #ffd6ad;
+}
+
+footer a:hover{
+    color: #124d56;
+}
+
+.right-footer{
+    float: right;
+    width: 50%;
+}

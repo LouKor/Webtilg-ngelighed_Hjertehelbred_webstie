@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webtilhængelighed_underside Kontaktformular</title>
+    <title>Webtilhængelighed_underside Kontaktside</title>
     <link rel="stylesheet" href="/CSS/kontaktformular.css">
+    <script src="https://kit.fontawesome.com/db7e7c21ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,17 +16,18 @@
 
 <main>
     <!--General kontakt information-->
-    <section class="Kontaktoversigt">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam non saepe aliquid, iure veniam fuga repellendus voluptas accusamus iste impedit nemo quidem reiciendis. Impedit dolor possimus a magni ea!</p>
-        <h1>Kontakt os</h1>
-            <p>Tlf: (+45) 66 61 11 13</p>
-            <p>Telefon åben</p>
-            <p>Man-fre 9-15</p>
-            <p>Email:______@____.dk</p>
-            <p>Vi svare på din email hurtigtst muligt</p>
-        <h2>Adresse</h2>
-        <p>____</p>
-        <p>Randomvejnavn 89, 3. sal. 4200 Slagelse</p>
+    <section class="kontaktoversigt">
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam non saepe aliquid, iure veniam fuga repellendus voluptas accusamus iste impedit nemo quidem reiciendis. Impedit dolor possimus a magni ea!</p>
+            <h1>Kontakt os</h1>
+                <p>Tlf: (+45) 66 61 11 13</p>
+                <p>Telefon åben</p>
+                <p>Man-fre 9-15</p>
+                <p>Email:______@____.dk</p>
+            <h2>Adresse</h2>
+            <p>____</p>
+            <p>Randomvejnavn 89, 3. sal. 4200 Slagelse</p>
+        </div>
     </section>
 
     <section>
@@ -35,20 +37,93 @@
     </section>
 
 
- <!--Kontaktformular-->
+    <!--Kontaktformular-->
+    <section class="kontaktform">
+            <h4>Kontakt os</h4>
+            <p class="kontakt-tekst">Skriv til os via kontaktformularen og så vender vi tilbage til dig hurtigst muligt</p>
+        
+            <form>
+                <label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+                <input id="navn" type="text" required>
+
+                <label for="efternavn">Efternavn</label>
+                <input id="efternavn" type="text" required>
+                
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email" required>
+                
+                <label for="telefon">Telefonnummer</label>
+                <input id="telefon" type="tel">
+
+                <label for="by">By</label>
+                <input id="by" type="text">
+
+                <label for="postnummer">Postnummer</label>
+                <input id="postnummer" type="text">
+                
+                <div class="custom-select">
+                    <label for="region">Region</label>
+                    <select id="region" name="select">
+                        <option value="0" selected disabled>Vælg region</option> 
+                        <option value="1">Syddanmark</option>
+                        <option value="2">Sjælland</option>
+                        <option value="3">Hovedstaden</option>
+                        <option value="4">Nordjylland</option>
+                        <option value="5">Midtjylland</option>
+                    </select>
+                </div>
+
+                <fieldset class="checkbox">
+                    <legend>Hvilke artikler interessere dig mest?</legend>
+                    <div>
+                        <input type="checkbox" name="services" id="motion og sport" value="Motion og sport">
+                        <label for="motion og sport">Motion og Sport</label>
+                    </div>
+                        
+                    <div>
+                        <input type="checkbox" name="services" id="madopskrifter" value="Madopskrifter">
+                        <label for="madopskrifter">Madopskrifter</label>
+                    </div>
+                        
+                    <div>
+                        <input type="checkbox" name="services" id="viden om helbred" value="Viden om helbred">
+                        <label for="viden om helbred">Viden om helbred</label>
+                    </div>
+                        
+                    <div>
+                        <input type="checkbox" name="services" id="lokale tilbud" value="Lokale tilbud">
+                        <label for="lokale tilbud">Lokale tilbud</label>
+                    </div>
+                </fieldset>
+                    
+                <label for="kommentar">Kommentar</label>
+                <textarea name="kommentar" id="kommentar" rows="8" cols="60"></textarea> 
+                    
+                <fieldset> 
+                    <legend>Må vi kontakte dig via email?</legend>
+                    <input id="ja" type="radio" value="ja" name="kontaktes">
+                    <label for="ja">Ja</label>
+                    
+                    <input id="nej" type="radio" value="nej" name="kontaktes">
+                    <label for="nej">Nej</label>
+                </fieldset>
+                    
+                <input type="submit" name="submit" value="Send">
+            
+            </form>
+        </section>
 
 
 
-
- <section>
-    <img src="/Foto/dennis-von-westburg-VbwSyrzkxLI-unsplash.jpg" alt="">
-    <h4>Lad os leve længe - Sammen</h4>
- </section>
+    <section>
+        <img src="/Foto/dennis-von-westburg-VbwSyrzkxLI-unsplash.jpg" alt="">
+        <h4>Lad os leve længe - Sammen</h4>
+    </section>
 
 </main>
 
 <footer>
-    
+
 </footer>
 
 
