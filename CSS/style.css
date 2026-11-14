@@ -4,27 +4,48 @@
 }
 
 body {
-    background-color: #faf9f9;
 }
+
+header, a {
+    display: flex;
+    background-color: #124d56;
+    color: #ffd6ad;
+}
+
 
 .hero_foto {
     width: 100%;
 }
 
-/*flexbox om emnet*/
-
-.flexbox {
-    background-color: #89b0ae;
-    margin: 1rem;
+/*Emner-Gridbox*/
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2);
 }
 
-.emne_img {
-    width: 100%;
+.emne-blog1 a, .emne-blog2 a {
+    border: 2px solid none;
+    padding:  0.8rem 1.5rem;
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    margin: 1rem;
+    background-color: #124d56;
+}
+
+.emne-blog1 {
+    background-color: #89b0ae;
+}
+
+
+.hjerte_img {
+    max-width: 50%;
     display: flex;
     justify-content: flex-end;
 }
 
-.header3 {
+
+.emne-blog2 {
     background-color: #ffd6ad;
 }
 
@@ -33,16 +54,25 @@ body {
 }
 
 /*Aktivitets artikler*/
-.grid {
+.artikler {
+    padding: 3rem;
     display: grid;
-    grid-template-rows: (4, 1fr);
+    grid-template-columns: 4;
+    grid-template-rows: 1
 }
 
 .box-1, .box-2, .box-3,.box-4 {
     padding: 2rem;
+    margin: 2rem;
     width: 100%;
+    background-color: #89b0ae;
 }
 
+.grid-foto {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
 
 .footer_img {
 width: 100%;
@@ -58,21 +88,23 @@ footer {
 .left-footer{
     float: left;
     width: 50%;
-}
-
-footer p, h4{
     color: #124d56;
 }
 
-footer a{
-    color: #124d56;
+
+.footer-some{
+    color: #ffd6ad;
 }
 
-footer a:hover{
-    color: #124d56;
+.footer a:hover{
+    color: #ffd6ad;
 }
 
 .right-footer{
     float: right;
     width: 50%;
+}
+
+@media screen and (min-width: 769px) {
+    
 }
