@@ -11,35 +11,60 @@
 <body>
     
     <header>
-        <nav>
-            <ul>
-                <a href="#">Kontakt</a>
-                <a href="#">Hjertet</a>
-                <a href="#">Om os</a>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img class="logo" src="/Foto/Logo - lys.png" alt="">
+            <h1 class="navn">Navn</h1>
+        </div>
+
+        <div class="header-right">
+            
+        </div>
+        <details class="burgermenu">
+            <summary class="menu" aria-label="åben menu">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i> 
+                <i class="fa-solid fa-circle-user"></i>
+            </summary>
+            <nav class="dropdown-menu">
+                <ul>
+                    <a href="/index.html">Forside</a>
+                    <a href="/emne.html">Hjertet</a>
+                    <a href="#">Hvem er vi</a>
+                    <a href="/kontaktformular.html">Kontakt</a>
+                </ul>
+            </nav>
+        </details>
+        
+
     </header>
 
     <!--Hovedindhold-->
     <main>
-       
-        <img class="hero_foto" src="/Foto/aziz-acharki-gv3VWXwKrrA-unsplash.jpg" alt="">
-        <section> <!--Introduction til hjemmesiden-->
-            <h1>Header 1</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis dolores, ducimus delectus quas odit. Consequuntur, assumenda corporis commodi officiis, debitis ratione exercitationem id, ab ducimus eos cumque a adipisci.</p>
+        
+        <section class="intro-container"> <!--Introduction til hjemmesiden-->
+            <img class="hero-foto" src="/Foto/aziz-acharki-gv3VWXwKrrA-unsplash.jpg" alt="">
+            <div class="intro-tekst">
+                <h1>Header 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis dolores, ducimus delectus quas odit. Consequuntur, assumenda corporis commodi officiis, debitis ratione exercitationem id, ab ducimus eos cumque a adipisci.</p>
+            </div>
         </section>
 
         <!--Intro til viden om hjertet/emne-->
         <section class="grid">
-            <div class="emne-blog1">
-                <h2>header 2</h2>
+            <div class="emne-blog1_tekst">
+                <h2>Header 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio iusto libero tenetur repudiandae aperiam qui numquam, incidunt commodi perferendis aspernatur, molestiae dolores pariatur temporibus quidem? Ullam, vero pariatur? Recusandae.</p>
                 <a class="link-emne" href="/emne.html">Læs mere</a> 
+            </div>
+            <div class="emne-blog1">
                 <img class="hjerte_img" src="/Foto/jesse-orrico-Us3AQvyOP-o-unsplash.jpg" alt="">
             </div>
+
             <div class="emne-blog2">
                 <img class="familie_img" src="/Foto/lawrence-crayton-cf1cN3ofKUM-unsplash.jpg" alt="">
-                <h3>Header 3</h3>
+            </div>
+            <div class="emne-blog2_tekst">
+                <h2>Header 2.1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit mollitia sequi modi aliquam exercitationem nostrum rerum at et provident molestias dolores hic eligendi obcaecati recusandae quasi, necessitatibus, itaque ducimus!</p>
                 <a href="#">Læs mere</a>
             </div>
@@ -47,31 +72,38 @@
 
        
         <!--Aktivitets artikler-->
-        <section class="arktikler">
-            <h5>Artikler</h5>
+        <section>
+                <h3 class="flex-overskift">Artikler</h3>
+            <div class="flex-container">
+                <div class="flex-artikler">
+                    <div class="box">
+                        <img class="flex-foto" src="/Foto/sweet-life-ovVuY7mixrQ-unsplash.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
 
-            <div class="box-1">
-                <img class="grid-foto" src="/Foto/sweet-life-ovVuY7mixrQ-unsplash.jpg" alt="">
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                    <div class="box">
+                        <img class="flex-foto" src="/Foto/maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                    <div class="box">
+                        <img class="flex-foto" src="/Foto/ekaterina-shakharova-L4nwL3195U0-unsplash.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                    <div class="box">
+                        <img class="flex-foto" src="/Foto/national-cancer-institute-tFkXIxtYVjw-unsplash.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
             </div>
-
-            <div class="box-2">
-                <img class="grid-foto" src="/Foto/maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg" alt="">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-            </div>
-
-            <div class="box-3">
-                <img class="grid-foto" src="/Foto/ekaterina-shakharova-L4nwL3195U0-unsplash.jpg" alt="">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-            </div>
-
-            <div class="box-4">
-                <img class="grid-foto" src="/Foto/national-cancer-institute-tFkXIxtYVjw-unsplash.jpg" alt="">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-            </div>
-
+        </div>
         </section>
 
+        
         <img class="footer_img" src="/Foto/kelly-sikkema-XX2WTbLr3r8-unsplash.jpg" alt="">
 
     </main>
@@ -93,9 +125,9 @@
         <section class="right-footer">
             <h4>Følg os</h4>
             <ul>
-                <a class="footer-some" href="#">Facebook</a>
-                <a class="footer-some" href="#">Instagram</a>
-                <a class="footer-some" href="#">Youtube</a>
+                <a class="footer-some" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer-some" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a class="footer-some" href="#"><i class="fa-brands fa-youtube"></i></a>
             </ul>
         </section>
     </footer>

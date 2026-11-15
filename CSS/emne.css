@@ -2,3 +2,55 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+/*Intro til emne siden*/
+
+.intro-foto {
+    width: 100%;
+}
+
+
+
+
+/*kort viden om hjertet*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.hjerte1-tekst {
+    background-color: #124d56;
+    color: #ffd6ad ;
+    padding: 5rem;
+}
+
+.hjerte2-tekst {
+    background-color: #ffd6ad;
+    padding: 5rem;
+}
+
+.hjerte1-tekst h2, .hjerte2-tekst h2 {
+    margin-bottom: 5rem;
+    font-size: 40px;
+}
+
+.hjerte1-tekst p, .hjerte2-tekst p {
+    font-size: 36px;
+    margin: 2rem;
+}
+
+.hjertehænder {
+    width: 100%;
+    height: 100%;
+}
+
+.x-ray {
+    width: 100%;
+    height: 100%;
+}
+
+/*Artikler om mere viden*/
+
+
+
