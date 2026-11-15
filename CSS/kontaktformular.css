@@ -3,25 +3,58 @@
     margin: 0;
 }
 
-.body {
+body {
     background-color: #faf9f9;
+    color: #222;
 }
 
 /*Kontaktoversigt*/
 
-.kontaktoversigt {
-    background-color: #ffd6ad;
+.flex-box {
+  background-color: #ffd6ad;
+    display: block;
+    justify-content: center;
+    width: 500px;
+    padding: 2rem;
+    margin: 2rem;
 }
 
-/*Info om online hjælp*/
+
+/*Info om online hjælp --> Gridbox*/
 
 .info_online_hjælp {
 background-color: #89B0Ae;
 }
 
-.online_img {
-    width: 100%;
+
+.grid {
+    display: grid;
+    grid-template-columns: 2;
+    margin: 3rem;
 }
+
+.onlinehjælp-tekst {
+    background-color: #89B0Ae;
+    padding: 5rem;
+}
+
+.onlinehjælp-tekst h3 {
+    margin-bottom: 5rem;
+    font-size: 40px;
+}
+
+.onlinehjælp-tekst p {
+    font-size: 36px;
+    margin: 2rem;
+}
+
+.online-foto {
+    width: 50%;
+    padding: 3rem;
+    
+   
+}
+
 
 /*Kontaktformular*/
 input[type=text], input[type=email],input[type=tel], select, textarea { 
@@ -34,7 +67,7 @@ input[type=text], input[type=email],input[type=tel], select, textarea {
 
 }
 
-/*Styling af dropdown*/
+/*Styling af dropdown i kontaktformular*/
 select{
 	padding: 0.675em 6em 0.675em 1em;
 	appearance: none;
@@ -106,8 +139,8 @@ fieldset{
 	border-style: dotted; /* Kontrollerer stregen rundt om fieldset - kan fjernes ved at bruge 'hidden'*/
 }
 
-::placeholder{ /*Tager fat i placeholder-tekst i inputfeltet*/
-	color:#333;
+::placeholder{ 
+	color:#222;
 }
 
 .kontaktform {
@@ -116,7 +149,7 @@ fieldset{
   transition: 0.5s;
   padding: 1.3em;
   width: 50%;
-  margin: 0 auto; 
+  margin: 40px auto; 
 }
 
 /*Andre style elementer*/
@@ -146,6 +179,21 @@ fieldset{
 	}
 }
 
+/*Footer img*/
+
 .levelænge_img {
-    width: 100%;
+   width: 100%;
+   display: flex;
+    
+}
+
+/*Dark mode --> dette skal være med til at vælge hvad bruger's browser/enhed har som preferance i forhold til darkmode*/ 
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: #222;
+    }
+
+    h4 {
+        color: #faf9f9;
+    }
 }

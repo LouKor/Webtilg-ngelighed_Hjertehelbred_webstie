@@ -3,20 +3,46 @@
     margin: 0;
 }
 
+body {
+    background-color: #faf9f9;
+    color: #222;
+}
+
+/*Header*/
+
+
 /*Intro til emne siden*/
 
-.intro-foto {
-    width: 100%;
+.emne-foto {
+    width: 50rem;
+    margin: 2rem;
+}
+
+.emne-container {
+    display: flex;
+    justify-content: center;
 }
 
 
+.emne-flexbox {
+    display: flex;
+    justify-content: center;
+}
 
+.info {
+    margin: 1rem;
+}
 
 /*kort viden om hjertet*/
 
 .grid {
     display: grid;
     grid-template-columns: auto auto;
+    
+}
+
+.viden-overskift {
+    font-size: 40px;
 }
 
 .hjerte1-tekst {
@@ -43,14 +69,93 @@
 .hjertehænder {
     width: 100%;
     height: 100%;
+    
+   
 }
 
 .x-ray {
     width: 100%;
     height: 100%;
+    
 }
 
 /*Artikler om mere viden*/
 
+.viden-overskift {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-viden {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    margin: 3rem;
+    width: 50rem;
+    background-color: #89b0ae;
+}
+
+.box h4 {
+    padding: 3rem;
+    font-size: 26px;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.viden-foto {
+    width: 20rem;
+    height: auto;
+}
+
+.box i {
+    margin: 2rem;
+    font-size: 65px;
+    margin-top: 10rem;
+    color: #124d56;
+}
+
+button {
+    background-color: #124d56;
+    color: #ffd6ad;
+    font-size: 28px;
+    text-decoration: none;
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+button:hover {
+    background-color: #fdc27c;
+    color: #124d56;
+}
+
+/*Footer*/
 
 
+/*Dark mode --> dette skal være med til at vælge hvad bruger's browser/enhed har som preferance i forhold til darkmode*/ 
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: #222;
+    }
+
+    .info {
+        color: #faf9f9;
+    }
+
+    h3 {
+        color: #faf9f9;
+    }
+}
