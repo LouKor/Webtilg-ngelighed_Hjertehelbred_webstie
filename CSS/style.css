@@ -12,7 +12,7 @@ p {
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-size: 28pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -81,10 +81,6 @@ position: relative;
     justify-content: center;
 }
 
-.intro-container h1 {
-    margin-top: 2rem;
-}
-
 .intro-flexbox {
     display: flex;
     justify-content: center;
@@ -95,18 +91,30 @@ position: relative;
   margin: 2rem;
   border-radius: 1rem;
 }
+
 .intro-tekst {
-    font-size: 40px;
     padding: 10px;
-    margin: 2rem;
+    margin: 1rem;
     width: 40rem;
 }
 
 /*Emner-Gridbox*/ 
 .grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} /*Til desktop versionen havde jeg problember med at få grid til at blive en størrelse mindre.*/
+
+.emne-blog1  {
+    grid-column: 3/5;
+    grid-row: 1/2;
 }
+
+.emne-blog2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
 
 .emne-blog1_tekst a, .emne-blog2_tekst a {
     border: 2px solid none;
@@ -123,10 +131,14 @@ position: relative;
 .emne-blog1_tekst {
     background-color: #89b0ae;
     padding: 5rem;
+    grid-column: 1/3; /*emneblog1_tekst fylder de første to kolonner*/
+    grid-row: 1/2;
 }
 .emne-blog2_tekst {
     background-color: #ffd6ad;
     padding: 5rem;
+    grid-column: 3/5;
+    grid-row: 2/3;
 }
 
 .emne-blog1_tekst h2, .emne-blog2_tekst h2 {
@@ -141,7 +153,6 @@ position: relative;
 
 .familie_img {
     width: 100%;
-    
 }
 
 /*Aktivitets artikler*/
@@ -174,6 +185,7 @@ position: relative;
 
 .box p {
     padding:  3rem;
+    font-weight: bolder
 }
 
 .flex-foto {
@@ -189,10 +201,28 @@ position: relative;
     color: #124d56;
 }
 
+.forside-slut{
+    display: flex;
+    justify-content: center;
+}
+
+.længesammen-citat{
+    color: #ffd6ad;
+    display: flex;
+    background-color: #124d56;
+    position: absolute;
+    margin: 3rem auto;
+    float: right;
+    margin-left: 50%;
+    margin-top: 50%;
+    font-size: 36pt;
+}
+
 .levelænge_img {
-width: 100%;
-margin-top: 2rem;
-margin-bottom: 2rem;
+    width: 90%;
+    max-height: 30%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /*Footer*/
@@ -201,13 +231,17 @@ footer {
     padding: 1rem 0.5rem;
     display: flex;
     justify-content: space-around;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .footer-tekst {
     color: #ffd6ad;
     padding: 1rem;
     font-size: 20px;
+}
+
+.footer-tekst h4{
+    font-size: 28px;
 }
 
 .footer-tekst a {
@@ -219,18 +253,52 @@ footer {
     float: left;
 
 }
-.right-footer{
-    float: right; 
+.right-footer{ 
+    display: flex;
+    align-items: last baseline;
+}
+
+.right-footer h4 {
+    color: #ffd6ad;
+    font-size: 24px;
 }
 
 .footer-some{
     color: #ffd6ad;
-    display: flex;
+    display: inline;
+    justify-content: flex-end;
 }
 
 /*Media Query*/
-@media screen and (min-width: 769px) {
-    
+@media screen and (max-width: 769px) {
+    .emne-blog1_tekst {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .emne-blog1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .emne-blog2_tekst {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .emne-blog2{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+    h4 {
+       font-size: 20px; 
+    }
+    .længesammen-citat{
+        color: #ffd6ad;
+        margin: 1rem auto;
+        float: right;
+        margin-left: 20%;
+        margin-top: 50%;
+        font-size: 24pt;
+}
 }
 
 /*Dark mode --> dette skal være med til at vælge hvad bruger's browser/enhed har som preferance i forhold til darkmode*/ 
@@ -246,4 +314,22 @@ footer {
     h3 {
         color: #faf9f9;
     }
+}
+
+/*SCREEN READER*/
+/*Hop ned til hovedindhold. Kode fra:https://www.a11y-collective.com/blog/skip-to-main-content/ */
+.screen-reader-text {
+  position: absolute; /*Positions the link absolutely on the page, allowing it to be placed anywhere.*/
+  left: -9999px; /*Moves the link far off-screen to the left, making it invisible to sighted users.*/
+  z-index: 999; /*Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.*/
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0; /*Sets the link's opacity to 0, making it fully transparent and invisible.*/
+}
+ 
+.screen-reader-text:focus {
+  left: 50%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen.*/
+  transform: translateX(-50%); /*This centres the link horizontally by moving it back to the left by 50% of its own width.*/
+  opacity: 1; /*The link's opacity is set to 1, making it fully visible.*/
 }
