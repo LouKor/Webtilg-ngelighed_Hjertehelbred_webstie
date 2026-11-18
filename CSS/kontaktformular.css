@@ -8,6 +8,14 @@ body {
     color: #222;
 }
 
+p {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1, h2, h3{
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /*Kontaktoversigt*/
 
 .flex-box {
@@ -17,6 +25,7 @@ body {
     width: 500px;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 1rem;
 }
 
 
@@ -36,6 +45,7 @@ background-color: #89B0Ae;
 .onlinehjælp-tekst {
     background-color: #89B0Ae;
     padding: 5rem;
+    border-radius: 2rem;
 }
 
 .onlinehjælp-tekst h3 {
@@ -50,21 +60,22 @@ background-color: #89B0Ae;
 
 .online-foto {
     width: 50%;
-    padding: 3rem;
-    
-   
+    padding: 3rem;   
 }
 
-
 /*Kontaktformular*/
+label, option, legend{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 input[type=text], input[type=email],input[type=tel], select, textarea { 
   width: 100%;
   padding: 1em;
   border: 2px solid #124d56;
-  border-radius: 4px;
+  border-radius: 3rem;
   margin-top: 0.5em;
   margin-bottom: 1em;
-
 }
 
 /*Styling af dropdown i kontaktformular*/
@@ -107,18 +118,18 @@ input[type=submit] {
   color: #ffd6ad;
   padding: 0.8em 1.5em;
   border: none;
-  border-radius: 4px;
   width:100%;
   margin-top: 1em;
   font-size: 18px;
   cursor: pointer;
+  border-radius: 3rem;
 }
 
 input[type=submit]:hover {
   background-color: #ffd6ad;
   color: #124d56;
   transition: 0.5s;
- 
+  border-radius: 3rem;
 }
 
 input[type=checkbox]{
@@ -126,7 +137,7 @@ input[type=checkbox]{
 	cursor: pointer;
 }
 
-.checkbox{ /*margin på fieldset med class checkbox*/
+.checkbox{ 
 	margin: 0.8em 0;
 }
 
@@ -136,7 +147,7 @@ input[type=radio]{
 
 fieldset{
 	border-color: #ffd6ad;
-	border-style: dotted; /* Kontrollerer stregen rundt om fieldset - kan fjernes ved at bruge 'hidden'*/
+	border-style: dotted; 
 }
 
 ::placeholder{ 
@@ -150,6 +161,7 @@ fieldset{
   padding: 1.3em;
   width: 50%;
   margin: 40px auto; 
+  border-radius: 2rem;
 }
 
 /*Andre style elementer*/

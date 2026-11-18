@@ -8,6 +8,14 @@ body {
     color: #222;
 }
 
+p {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1, h2, h3{
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /*Header*/
 
 
@@ -16,6 +24,7 @@ body {
 .emne-foto {
     width: 50rem;
     margin: 2rem;
+    border-radius: 1rem;
 }
 
 .emne-container {
@@ -103,6 +112,7 @@ body {
     margin: 3rem;
     width: 50rem;
     background-color: #89b0ae;
+    border-radius: 1rem;
 }
 
 .box h4 {
@@ -117,6 +127,7 @@ body {
 .viden-foto {
     width: 20rem;
     height: auto;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .box i {
@@ -135,6 +146,7 @@ button {
     padding: 1rem;
     margin: 1rem;
     margin-bottom: 5rem;
+    border-radius: 1rem;
 }
 
 button:hover {
