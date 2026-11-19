@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/db7e7c21ac.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class=".darkmode"> <!--body har en class til af aktivere dark mode med at bruge '.' har jeg slået den fra. optimalt skulle den bruges som en knap. har kun forsøgt på forsiden og dens. Hvis man sætte den til skulle siden gerne gå i darkmode og solikonet vil blive en måne-->
     
     <header>
         <section>
@@ -26,7 +26,10 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-bars"></i> 
                     <i class="fa-solid fa-circle-user"></i>
-                    <i class="fa-solid fa-sun"></i>
+                    <button id="theme-switch">
+                        <i class="fa-solid fa-sun"></i>  
+                        <i class="fa-solid fa-moon"></i>        
+                    </button>
                 </summary>
                 <nav class="dropdown-menu">
                     <ul>
@@ -38,6 +41,7 @@
                 </nav>
             </details>
         </section>
+        
     </header>
 
     <!--Hovedindhold-->
@@ -63,7 +67,7 @@
         <section class="grid">
             <div class="emne-blog1_tekst">
                 <h2>Vores hjerte </h2>
-                <p>Bliv klogere på kroppens største muskel, hvordan du passer på det og viden om hvordan det fungerer inde i kroppen.</p>
+                <p>Bliv klogere på kroppens vigtigste muskel, hvordan du passer på det og viden om hvordan det fungerer inde i kroppen.</p>
                 <a class="læsemere" href="/emne.html">Læs mere</a> 
             </div>
             <div class="emne-blog1">

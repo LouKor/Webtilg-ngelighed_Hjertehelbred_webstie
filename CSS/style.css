@@ -2,6 +2,18 @@
     box-sizing: border-box;
     margin: 0;
 }
+:root {
+    background-color: #ffd6ad;
+    color: #222;
+}
+
+.darkmode {
+    background-color: #222;
+}
+
+.darkmode h1 p h3 {
+    color: #ffd6ad;
+}
 
 body {
     background-color: #faf9f9;
@@ -71,6 +83,36 @@ position: relative;
 
 .dropdown-menu a:hover {
     background-color: #FDC27C;
+}
+
+/*Darkmode/lightmode Button*/
+/*Hjælp fra 'create a dark mode switch with html, css, javascript' på youtube: https://www.youtube.com/watch?v=_gKEUYarehE*/
+.theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background-color: #ffd6ad;
+    color: #124d56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch i {
+    color:#ffd6ad;
+    background-color: #124d56;
+}
+#theme-switch i:last-child{
+    display: none;
+}
+.darkmode #theme-switch i:first-child{
+    display: none;
+}
+.darkmode #theme-switch i:last-child{
+    display:block;
 }
 
 /*Header slut*/
