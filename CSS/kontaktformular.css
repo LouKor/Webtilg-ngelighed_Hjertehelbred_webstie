@@ -81,22 +81,21 @@ position: relative;
     width: 30%;
     height: 200%;
     margin: 3rem auto;
-    padding: 7rem;
+    padding: 3rem;
     border-radius: 1rem;
 }
 
 .flex-box-tekst {
   margin: 1rem;
   margin-bottom: 3rem;
-  
 }
+
 
 /*Info om online hjælp --> Gridbox*/
 
 .info_online_hjælp {
 background-color: #89B0Ae;
 }
-
 
 .grid {
     display: grid;
@@ -307,14 +306,25 @@ footer {
 
 /*Media Query*/
 @media screen and (max-width: 769px) {
+    
+    .flex-box {
+        display: flex;
+        width: 90%;
+    }
+    
+    .kontaktform {
+        display: block;
+        width: 100%;
+    }
+
     .onlinehjælp-tekst {
     grid-column: 1/5;
     grid-row: 4/5;
   }
-.online-hjælp{
-    grid-column: 1/5;
-    grid-row: 3/4;
-}
+    .online-hjælp{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
 }
 
 /*Dark mode --> dette skal være med til at vælge hvad bruger's browser/enhed har som preferance i forhold til darkmode*/ 
